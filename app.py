@@ -1,8 +1,10 @@
 from tkinter import *
 
 root = Tk()
+root.title("Simple Calculator")
 
-e = Entry(root, width=50)
+e = Entry(root, width=35, borderwidth=1)
+e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 e.pack()
 e.insert(0, "Enter your name: ")
 
