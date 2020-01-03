@@ -3,8 +3,8 @@ from tkinter import *
 root = Tk()
 root.title("Simple Calculator")
 
-e = Entry(root, width=35)
-e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
+e = Entry(root, width=30)
+e.grid(row=0, column=0, columnspan=3, pady=10)
 
 
 def button_click(number):
@@ -70,23 +70,24 @@ def button_divide():
     f_num = int(first_number)
     e.delete(0, END)
 
-button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
-button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))
-button_3 = Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3))
-button_4 = Button(root, text="4", padx=40, pady=20, command=lambda: button_click(4))
-button_5 = Button(root, text="5", padx=40, pady=20, command=lambda: button_click(5))
-button_6 = Button(root, text="6", padx=40, pady=20, command=lambda: button_click(6))
-button_7 = Button(root, text="7", padx=40, pady=20, command=lambda: button_click(7))
-button_8 = Button(root, text="8", padx=40, pady=20, command=lambda: button_click(8))
-button_9 = Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9))
-button_0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0))
-button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
-button_equal = Button(root, text="=", padx=91, pady=20, command=button_equal)
-button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_clear)
 
-button_substract = Button(root, text="-", padx=39, pady=20, command=button_substract)
-button_multiply = Button(root, text="*", padx=39, pady=20, command=button_multiply)
-button_divide = Button(root, text="/", padx=39, pady=20, command=button_divide)
+button_1 = Button(root, text="1", padx=45, pady=20, command=lambda: button_click(1))
+button_2 = Button(root, text="2", padx=45, pady=20, command=lambda: button_click(2))
+button_3 = Button(root, text="3", padx=45, pady=20, command=lambda: button_click(3))
+button_4 = Button(root, text="4", padx=45, pady=20, command=lambda: button_click(4))
+button_5 = Button(root, text="5", padx=45, pady=20, command=lambda: button_click(5))
+button_6 = Button(root, text="6", padx=45, pady=20, command=lambda: button_click(6))
+button_7 = Button(root, text="7", padx=45, pady=20, command=lambda: button_click(7))
+button_8 = Button(root, text="8", padx=45, pady=20, command=lambda: button_click(8))
+button_9 = Button(root, text="9", padx=45, pady=20, command=lambda: button_click(9))
+button_0 = Button(root, text="0", padx=45, pady=20, command=lambda: button_click(0))
+button_add = Button(root, text="+", padx=45, pady=20, command=button_add)
+button_equal = Button(root, text="=", padx=98, pady=20, command=button_equal)
+button_clear = Button(root, text="Clear", padx=87, pady=20, command=button_clear)
+
+button_substract = Button(root, text="-", padx=46, pady=20, command=button_substract)
+button_multiply = Button(root, text="*", padx=47, pady=20, command=button_multiply)
+button_divide = Button(root, text="/", padx=47, pady=20, command=button_divide)
 
 
 button_1.grid(row=3, column=0)
